@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvelo" id="txtvelo">km/h
+    <button id="verificar" type="button" value="verificar">verificar</button>
+    <div id="espaco"></div>
+    
+    <script defer>
+        botao = window.document.querySelector('button#verificar')
+        botao.addEventListener('click', calcular)
+
+        function calcular() {
+            txtvelo = window.document.querySelector('input#txtvelo')
+            velo = Number(txtvelo.value)
+
+            espaco.innerHTML = `<p>Sua velocidade atual é <strong>${velo}km/h</strong></p>`
+
+            espaco = window.document.querySelector('div#espaco')
+
+            if (velo > 60) {
+                espaco.innerHTML += `<p>Você está acima do limite de velocidade. <strong>MULTADO!</strong></p>`
+            }
+
+            else {
+                espaco.innerHTML += `<p>Você está dentro do limite de velocidade.</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>

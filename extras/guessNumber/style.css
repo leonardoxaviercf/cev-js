@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(54, 107, 126);
+}
+
+header {
+    color: white;
+    margin: 20px;
+}
+
+section {
+    text-align: left;
+    background-color: whitesmoke;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section div {
+    padding: 10px 0;
+}
+
+input#num {
+    width: 130px;
+}
+
+footer {
+    color: white;
+    margin: 20px;
+}

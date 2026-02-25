@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(104, 104, 196);
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" name="teste" class="sim">Click em mim</div>
+    <script defer>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        // maneiras diferentes de selecionar a mesma div 
+        // var d1 = window.document.getElementsByTagName('div')[0]
+        // var d1 = window.documets.getElementsByTagName
+        // var d1 = window.document.getElementById('msg')
+        // var d1 = window.document.getElementsByName('teste')[0]
+        // var d1 = window.document.getElementsByClassName('sim')[0]
+        var d1 = window.document.querySelector('div#msg')
+        
+
+        // corpo.style.background = 'black'
+        // p1.style.color = 'blue'
+        // window.document.write('Está escrito assim: '+p1.innerText)
+
+        // podemos ver a diferença entre innerText e innerHTML aqui:
+        // window.alert(p1.innerHTML)
+        // window.alert(p1.innerText)
+
+        d1.style.background = 'green'
+        d1.innerText = 'Estou aguardando'
+
+        // esse comando faz tudo quen os dois de cima fazem de uma vez só
+        // window.document.getElementById('msg').innerText = 'Teste'
+    </script>
+</body>
+</html>
