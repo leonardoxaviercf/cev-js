@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    background-color: rgba(19, 50, 152, 0.611);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;   
+}
+
+section div {
+    padding: 10px 0;
+}
+
+#res p {
+    padding: 10px;
+}
